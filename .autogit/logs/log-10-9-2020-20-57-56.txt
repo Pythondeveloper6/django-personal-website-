@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Oct 10 2020 20:57:56 GMT+0200 (Eastern European Standard Time)
+------------------------------------------------------
+
+Modified files:
+* service/models.py
+* service/templates/service/service_list.html
+* service/views.py
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
