@@ -96,60 +96,18 @@
 		                </div>
 		            </div>						
 					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-pie-chart"></span>
-								<a href="#"><h4>Web Design</h4></a>
-								<p>
-									“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-laptop-phone"></span>
-								<a href="#"><h4>Web Development</h4></a>
-								<p>
-									If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-camera"></span>
-								<a href="#"><h4>Photography</h4></a>
-								<p>
-									Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
-								</p>
-							</div>	
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-picture"></span>
-								<a href="#"><h4>Clipping Path</h4></a>
-								<p>
-									Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-tablet"></span>
-								<a href="#"><h4>Apps Interface</h4></a>
-								<p>
-									Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-rocket"></span>
-								<a href="#"><h4>Graphic Design</h4></a>
-								<p>
-									You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
-								</p>
-							</div>				
-						</div>														
+                        
+                        {% for service in object_list %}                       
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-services">
+                                    <span class="{{service.icon}}"></span>
+                                    <a href="#"><h4>{{service.title}}</h4></a>
+                                    <p>
+                                        {{service.description}}
+                                    </p>
+                                </div>
+                            </div>
+						{% endfor %}							
 					</div>
 				</div>	
 			</section>
@@ -180,94 +138,7 @@
 			</section>
 			<!-- end fact Area -->				
 
-			<!-- Start price Area -->
-			<section class="price-area section-gap">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Choose Your Plan</h1>
-								<p>When someone does something that they know that they shouldn’t do, did they.</p>
-							</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h1 class="package-no">01</h1>
-								<h4>Economy</h4>
-								<p class="mt-10">For the individuals</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
-							</div>
-							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h1 class="package-no">02</h1>
-								<h4>Business</h4>
-								<p class="mt-10">For the individuals</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
-							</div>
-							<div class="bottom-part">
-								<h1>£299.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h1 class="package-no">03</h1>
-								<h4>Premium</h4>
-								<p class="mt-10">For the individuals</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
-							</div>
-							<div class="bottom-part">
-								<h1>£399.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h1 class="package-no">04</h1>
-								<h4>Exclusive</h4>
-								<p class="mt-10">For the individuals</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
-							</div>
-							<div class="bottom-part">
-								<h1>£499.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
-						</div>																		
-					</div>
-				</div>	
-			</section>
-			<!-- End price Area -->			
+	
 
 			<!-- Start testimonial Area -->
 		    <section class="testimonial-area section-gap">
@@ -363,23 +234,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </footer>
             <!-- End footer Area -->		
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="{% static 'js/popper.min.js' %}"></script>
+			<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>			
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>			
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-    		<script src="js/jquery.tabs.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>	
-            <script src="js/isotope.pkgd.min.js"></script>			
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/jquery.counterup.min.js"></script>
-			<script src="js/simple-skillbar.js"></script>							
-			<script src="js/owl.carousel.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+  			<script src="{% static 'js/easing.min.js' %}"></script>			
+			<script src="{% static 'js/hoverIntent.js' %}"></script>
+			<script src="{% static 'js/superfish.min.js' %}"></script>	
+			<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+			<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>	
+    		<script src="{% static 'js/jquery.tabs.min.js' %}"></script>						
+			<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>	
+            <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>			
+			<script src="{% static 'js/waypoints.min.js' %}"></script>
+			<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+			<script src="{% static 'js/simple-skillbar.js' %}"></script>							
+			<script src="{% static 'js/owl.carousel.min.js' %}"></script>							
+			<script src="{% static 'js/mail-script.js' %}"></script>	
+			<script src="{% static 'js/main.js' %}"></script>	
 		</body>
 	</html>

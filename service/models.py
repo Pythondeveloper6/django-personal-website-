@@ -22,4 +22,4 @@ class Facts(models.Model):
     real_professionals = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.id
+        return str(self.id)

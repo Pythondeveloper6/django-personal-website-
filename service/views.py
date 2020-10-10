@@ -7,3 +7,4 @@ from django.views.generic import ListView
 
 class ServiceList(ListView):
     model = Service
+
